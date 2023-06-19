@@ -1,0 +1,53 @@
+.start-page {
+    min-height: calc(100vh - 80px);
+    background: url("../asset/img/start_page_back.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.start-page__title {
+    font-size: 96px;
+    line-height: 110px;
+    margin-bottom: 10px;
+    padding-top: 230px;
+    font-weight: 400;
+}
+
+.start-page__subtitle {
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 5px;
+}
+
+.start-page__text {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+
+.start-page__btn {
+    font-family: "Helvitica-bold", sans-serif;
+    font-weight: 700;
+    padding: 1px;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+
+.start-page__btn-text {
+    display: inline-block;
+    color: #f6f4f5;
+    padding: 20px 110px;
+    text-transform: uppercase;
+}
+
+.start-page__btn-price {
+    color: #5c5c5e;
+    padding: 20px 105px;
+    background-color: #e9e7ea;
+}
+
+.start-page__description {
+    //padding-bottom: 454px;
+    font-size: 13px;
+    line-height: 15px;
+}
