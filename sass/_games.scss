@@ -1,5 +1,5 @@
 .games {
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 }
 
 .games__section-title {
@@ -34,7 +34,7 @@
     border: 1px solid;
     border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
     border-image-slice: 1;
-
+    transition: box-shadow ease 0.2s;
     & > span {
         display: inline-block;
         padding: 16px 47px;
@@ -44,6 +44,11 @@
         background-clip: text;
         text-fill-color: transparent;
         text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 15px 1px lightgray;
+        transition: box-shadow ease 0.2s;
     }
 }
 
@@ -82,4 +87,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    &:hover {
+        background: linear-gradient(180deg, #670a75 0%, rgba(49, 8, 139, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
 }

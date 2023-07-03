@@ -1,0 +1,23 @@
+footer.header {
+    background: #fff;
+    margin-bottom: 44px;
+    //padding: 30px 0;
+    border-top: 1px solid #cacad6;
+    padding: 10px 0;
+}
+
+.footer__links {
+    justify-self: end;
+}
+
+.footer__link {
+    cursor: pointer;
+
+    & + & {
+        margin-left: 20px;
+    }
+
+    & > svg > path:hover {
+        fill: #4c4c4e;
+    }
+}
