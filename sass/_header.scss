@@ -1,0 +1,31 @@
+.header {
+    border-bottom: 1px solid #cacad6;
+    background: #f6f4f5;
+}
+
+.nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__link {
+    &:hover {
+        text-decoration: underline;
+        color: #b5b5bf;
+    }
+}
+
+.nav__logo {
+    justify-self: center;
+}
+
+.nav__basket {
+    justify-self: end;
+}

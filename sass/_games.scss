@@ -1,0 +1,98 @@
+.games {
+    margin-bottom: 85px;
+}
+
+.games__section-title {
+    margin-bottom: 50px;
+}
+
+.games__inner {
+    display: grid;
+    grid-template-columns: 300px 900px;
+}
+
+.description__text {
+    max-width: 300px;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.description__content {
+    align-self: start;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.description__btn {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    border-image-slice: 1;
+    transition: box-shadow ease 0.2s;
+    & > span {
+        display: inline-block;
+        padding: 16px 47px;
+        background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 15px 1px lightgray;
+        transition: box-shadow ease 0.2s;
+    }
+}
+
+.games__list {
+    display: flex;
+    justify-content: center;
+}
+
+.games__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+    padding: 20px 20px 22px 20px;
+}
+
+.games__box {
+    margin-bottom: 10px;
+}
+
+.games__title {
+    font-size: 22px;
+    line-height: 27.6px;
+    color: #070707;
+    margin-bottom: 10px;
+}
+
+.games__description {
+    line-height: 18px;
+    margin-bottom: 40px;
+    height: 72px;
+}
+
+.games__link {
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    &:hover {
+        background: linear-gradient(180deg, #670a75 0%, rgba(49, 8, 139, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
