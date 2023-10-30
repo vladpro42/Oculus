@@ -2,15 +2,20 @@
     margin-bottom: 125px;
     text-align: center;
     position: relative;
+    overflow-x: hidden;
+}
+
+.oculus__container {
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .oculus__text {
-    position: relative;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 400px;
-    line-height: 484px;
+    line-height: 400px;
     text-transform: uppercase;
     background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
     -webkit-background-clip: text;
@@ -21,6 +26,10 @@
     background-clip: text;
     text-fill-color: transparent;
     opacity: 0.1;
+    position: absolute;
+    z-index: -1;
+    animation: line-animate 6s linear infinite;
+
 
     /* &::before {
         content: "";
@@ -32,11 +41,30 @@
 }
 
 .oculus__glasses {
-    position: absolute;
+    /*  position: absolute;
     top: 0;
-    transform: translate(50%, 20%);
+    transform: translate(50%, 20%); */
+    margin-bottom: 30px;
 }
 
 .oculus__btn-price {
     background: #fff;
+}
+
+.oculus .start-page__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+@keyframes line-animate {
+    from {
+        transform: translateX(115%);
+        transform-origin: left center;
+    }
+
+    to {
+        transform: translateX(-115%);
+        transform-origin: right center;
+    }
 }

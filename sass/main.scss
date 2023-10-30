@@ -89,3 +89,21 @@ p {
 @import "./accessories";
 @import "./news";
 @import "./footer";
+
+@media (max-width: 738px) {
+
+    body {
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media (max-width: 585px) {
+
+    body {
+        font-size: 12px;
+    }
+
+}

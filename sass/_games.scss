@@ -35,7 +35,8 @@
     border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
     border-image-slice: 1;
     transition: box-shadow ease 0.2s;
-    & > span {
+
+    &>span {
         display: inline-block;
         padding: 16px 47px;
         background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
@@ -94,5 +95,112 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1250px) {
+    .games__inner {
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .games__description-wrap {
+        padding-left: 20px;
+        justify-self: left;
+        width: 300px;
+    }
+
+    .games__list {
+        grid-row: 2 / 3;
+    }
+
+    .games__item {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .games__inner {
+        grid-template-rows: 250px 1fr;
+    }
+
+    .games__list {
+        align-items: baseline;
+    }
+
+    .games__item {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 55px auto auto
+    }
+
+    .games__title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .games__inner {
+        grid-template-rows: 240px 1fr;
+    }
+
+    .games__item {
+        row-gap: 5px;
+    }
+
+    .games__box {
+        margin-bottom: 0;
+    }
+
+    .games__title {
+        margin-bottom: 0;
+    }
+
+    .games__description {}
+}
+
+@media (max-width: 550px) {
+
+    .games__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .games__item {
+        flex: 300px 2 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .games__title {
+        font-size: 16px;
+    }
+
+    .games__description {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .games__description-wrap {
+        width: initial;
+        padding: 0;
+    }
+
+    .games__item {
+        padding: 10px;
+    }
+
+    .games__box {
+        width: 60%;
     }
 }

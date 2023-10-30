@@ -104,3 +104,129 @@
     color: #f6f4f5;
     padding: 0 0 10px 9px;
 }
+
+@media (max-width: 1255px) {
+    .product-features__wrapp {
+        grid-template-columns: 210px auto;
+    }
+}
+
+@media (max-width: 1160px) {
+    .product-features__wrapp {
+        grid-template-columns: 210px auto;
+
+    }
+
+    .content__item--active {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .content-item__box {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .content-item__wrap {
+        flex: 200px 2 0;
+        order: 1;
+    }
+}
+
+@media (max-width: 765px) {
+    .content-item__video {
+        width: 210px;
+        height: 110px;
+    }
+
+    .content-item__wrap {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 685px) {
+
+    .product-features__text {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .product-features {
+        font-size: 14px;
+    }
+
+    .content-item__video {
+        width: 210px;
+        height: 110px;
+    }
+
+    .content-item__wrap {
+        padding-bottom: 0;
+        flex: auto 2 0;
+    }
+
+    .content-item__box {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+@media (max-width: 471px) {
+
+    .product-features__title {
+        padding-right: 0;
+    }
+
+    .product-features__text {
+        font-size: 18px;
+    }
+
+    .product-features__wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-features__btns {
+        flex: auto 1 0;
+    }
+
+    .product-features__content {
+        flex: auto 3 1;
+    }
+
+    .product-features__title {}
+
+    .product-features {
+        font-size: 12px;
+    }
+
+    .product__img {
+        display: none;
+    }
+
+    .product-features__wrapp {
+        grid-template-columns: 155px auto;
+    }
+
+    .content-item__video {
+        background: none;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .video__play {
+        margin: 0;
+    }
+
+    .video__text {
+        color: #5c5c5e;
+    }
+}
+
+@media (max-width: 380px) {}
