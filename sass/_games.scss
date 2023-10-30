@@ -1,0 +1,206 @@
+.games {
+    margin-bottom: 85px;
+}
+
+.games__section-title {
+    margin-bottom: 50px;
+}
+
+.games__inner {
+    display: grid;
+    grid-template-columns: 300px 900px;
+}
+
+.description__text {
+    max-width: 300px;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.description__content {
+    align-self: start;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.description__btn {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    border-image-slice: 1;
+    transition: box-shadow ease 0.2s;
+
+    &>span {
+        display: inline-block;
+        padding: 16px 47px;
+        background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 15px 1px lightgray;
+        transition: box-shadow ease 0.2s;
+    }
+}
+
+.games__list {
+    display: flex;
+    justify-content: center;
+}
+
+.games__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+    padding: 20px 20px 22px 20px;
+}
+
+.games__box {
+    margin-bottom: 10px;
+}
+
+.games__title {
+    font-size: 22px;
+    line-height: 27.6px;
+    color: #070707;
+    margin-bottom: 10px;
+}
+
+.games__description {
+    line-height: 18px;
+    margin-bottom: 40px;
+    height: 72px;
+}
+
+.games__link {
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    &:hover {
+        background: linear-gradient(180deg, #670a75 0%, rgba(49, 8, 139, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1250px) {
+    .games__inner {
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .games__description-wrap {
+        padding-left: 20px;
+        justify-self: left;
+        width: 300px;
+    }
+
+    .games__list {
+        grid-row: 2 / 3;
+    }
+
+    .games__item {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .games__inner {
+        grid-template-rows: 250px 1fr;
+    }
+
+    .games__list {
+        align-items: baseline;
+    }
+
+    .games__item {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 55px auto auto
+    }
+
+    .games__title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .games__inner {
+        grid-template-rows: 240px 1fr;
+    }
+
+    .games__item {
+        row-gap: 5px;
+    }
+
+    .games__box {
+        margin-bottom: 0;
+    }
+
+    .games__title {
+        margin-bottom: 0;
+    }
+
+    .games__description {}
+}
+
+@media (max-width: 550px) {
+
+    .games__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .games__item {
+        flex: 300px 2 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .games__title {
+        font-size: 16px;
+    }
+
+    .games__description {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .games__description-wrap {
+        width: initial;
+        padding: 0;
+    }
+
+    .games__item {
+        padding: 10px;
+    }
+
+    .games__box {
+        width: 60%;
+    }
+}
